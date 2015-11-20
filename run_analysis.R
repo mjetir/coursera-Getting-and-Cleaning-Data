@@ -30,7 +30,7 @@ y_train$activity<-activity_labels$V2[y_train$activity]
 #Create variable that tells to which group (test or train) the measurement belongs. 
 #Set the variable values for the test data.
 set<-rep("test",nrow(X_test))
-#Combine subject labels, group labels 8test or train), activities and measurements 
+#Combine subject labels, group labels (test or train), activities and measurements 
 #of test data into one data set.
 test<-cbind(subject_test,set,y_test,X_test)
 #Create variable that tells to which group (test or train) the measurement belongs. 
